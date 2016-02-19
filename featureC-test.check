@@ -4,7 +4,7 @@
         fail_unless(feature_c(1,3) == 3, "trivial case");
 	fail_unless(feature_c(3,1) == 3, "trivial case");
 	fail_unless(feature_c(8,8) == 8, "trivial case");
-	fail_unless(feature_c(1,3) == 1, "fail case");
+	fail_unless(feature_c(4,3) == 4, "fail case");
 
 #main-pre
 	srunner_set_xml(sr, "report_featureC.xml");
