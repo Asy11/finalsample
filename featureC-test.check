@@ -1,7 +1,10 @@
 #include "featureC.h"
 
-#test featureAtest
-        fail_unless(1 == 1, "trivial case");
+#test featureCtest
+        fail_unless(featureC(1,3) == 3, "trivial case");
+	fail_unless(featureC(3,1) == 3, "trivial case");
+	fail_unless(featureC(8,8) == 8, "trivial case");
+	fail_unless(featureC(1,3) == 1, "fail case");
 
 #main-pre
 	srunner_set_xml(sr, "report_featureC.xml");
