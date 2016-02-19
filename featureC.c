@@ -1,20 +1,23 @@
 /** @file
- *  @brief
- *  @author
- *  @bug
+ *  @brief compare two integer
+ *  @author msyoon
+ *  @bug no bug
  */
 
 #include "featureC.h"
 
 /** @brief
  *
- * @param x
- * @param y
- * @return int
+ * @param x integer
+ * @param y integer
+ * @return int integer
  */
 
 int feature_c(int x, int y)
 {
-	return 0;
+	if(x>y)
+		return x;
+	else
+		return y;
 }
 
